@@ -16,7 +16,12 @@ public class FamilyTree {
         System.out.println(secondHuman.birthdate);
         System.out.println("Children of " + secondHuman.name + " :");
         secondHuman.displayDescendants();
-	}
-
 	
+                firstHuman.addParent(secondHuman);
+
+        System.out.println("Parent of " + firstHuman.name + " :");
+        firstHuman.displayParents();
+
+
+        }
 }
